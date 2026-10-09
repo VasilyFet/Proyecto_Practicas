@@ -121,3 +121,93 @@ footer {
     color: #94a3b8;
     padding: 1rem 0;
 }
+
+
+/*
+
+/* Contenedor principal de la app */
+.contenedor-principal {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estilo para la tarjeta de emergencia superior */
+.header-emergencia {
+    text-align: center;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+}
+
+.etiqueta-punto {
+    background: #6b21a8; /* Tono violeta corporativo */
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+
+/* Botones de teléfono rápidos y llamativos */
+.telefonos-grid {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.btn-telefono {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
+    transition: transform 0.2s;
+}
+
+.btn-telefono.urgente { background-color: #9333ea; }
+.btn-telefono.emergencia { background-color: #e11d48; }
+
+.btn-telefono strong {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.btn-telefono:hover {
+    transform: scale(1.03);
+}
+
+/* Cuadrícula (Grid) de viñetas abajo estilo Instagram */
+.grid-viñetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en móvil */
+    gap: 0.75rem;
+}
+
+.tarjeton-viñeta {
+    background: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.img-viñeta {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1; /* Hace que las imágenes sean cuadradas exactas estilo Instagram */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.img-viñeta:hover {
+    transform: scale(1.03);
+}
