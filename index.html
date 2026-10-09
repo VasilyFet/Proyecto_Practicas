@@ -1,46 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punto Violeta - Las Palmas de Gran Canaria</title>
     <!-- Enlace a tu archivo CSS externo -->
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
-
-
 <body>
-    <main>
-        <!-- Cabecera Institucional -->
-        <header class="header-institucional">
-            <h1>Punto Violeta Digital</h1>
-            <p>Las Palmas de Gran Canaria</p>
-        </header>
 
-        <!-- Botones de Emergencia Directa -->
-        <a href="tel:112" class="btn btn-rojo">
-            Emergencias: 112
-        </a>
-
-        <a href="tel:016" class="btn btn-morado">
-            Atención Violencia de Género: 016
-        </a>
-
-        <!-- Sección de Recursos Locales -->
-        <div class="card">
-            <h2>Recursos Locales</h2>
-            <div class="recursos-lista">
-                <a href="tel:928446000" class="recurso-item">
-                    Casa Municipal de la Mujer (LPGC)
+    <main class="contenedor-principal">
+        
+        <!-- ZONA SUPERIOR: Información crítica y teléfonos de emergencia -->
+        <section class="tarjeton header-emergencia">
+            <span class="etiqueta-punto">Punto Violeta Digital - Las Palmas</span>
+            <h1>Recursos y Asistencia Inmediata</h1>
+            <p>Atención integral y recursos disponibles 24/7 en Las Palmas de Gran Canaria.</p>
+            
+            <div class="telefonos-grid">
+                <a href="tel:016" class="btn-telefono urgente">
+                    <strong>016</strong> <span>Atención contra la Violencia de Género</span>
                 </a>
-                <a href="tel:900842084" class="recurso-item">
-                    Cabildo de Gran Canaria (Igualdad)
+                <a href="tel:112" class="btn-telefono emergencia">
+                    <strong>112</strong> <span>Emergencias Generales (Islas Canarias)</span>
                 </a>
             </div>
-        </div>
+        </section>
 
-        <!-- Pie de página informativo -->
-        <footer>
-            <p>Ayuntamiento de Las Palmas de Gran Canaria • Uso confidencial y gratuito</p>
-        </footer>
+        <!-- ZONA INFERIOR: Cuadrícula (Grid) de viñetas estilo galería -->
+        <section class="galeria-viñetas">
+            <h2>Guías e Información Visual</h2>
+            
+            <div class="grid-viñetas">
+                <!-- Viñeta 1 -->
+                <div class="tarjeton-viñeta">
+                    <img src="viñeta1.png" alt="Viñeta informativa 1" class="img-viñeta">
+                </div>
+                <!-- Viñeta 2 -->
+                <div class="tarjeton-viñeta">
+                    <img src="viñeta2.png" alt="Viñeta informativa 2" class="img-viñeta">
+                </div>
+                <!-- Viñeta 3 -->
+                <div class="tarjeton-viñeta">
+                    <img src="viñeta3.png" alt="Viñeta informativa 3" class="img-viñeta">
+                </div>
+                <!-- Viñeta 4 -->
+                <div class="tarjeton-viñeta">
+                    <img src="viñeta4.png" alt="Viñeta informativa 4" class="img-viñeta">
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Ventana modal global para ampliar cualquier viñeta al hacer clic -->
+    <div id="modalImagen" class="modal">
+        <span class="cerrar">&times;</span>
+        <img class="modal-contenido" id="imgAmpliada" alt="Viñeta ampliada">
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo (al final del body para carga segura) -->
+    <script src="script.js"></script>
 </body>
 </html>
