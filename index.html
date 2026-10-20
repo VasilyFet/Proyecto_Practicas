@@ -3,51 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto Violeta - Las Palmas de Gran Canaria</title>
-    <!-- Enlace a tu archivo CSS externo -->
+    <title>Punto Violeta Digital - Las Palmas de Gran Canaria</title>
+    <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Estilos específicos para la integración del logo ICSE -->
-    <style>
-        .header-top {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 16px 24px 8px 24px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo-icse {
-            max-height: 42px; /* Tamaño discreto, elegante y no agresivo */
-            width: auto;
-            object-fit: contain;
-            opacity: 0.9;
-            transition: opacity 0.2s ease;
-        }
-
-        .logo-icse:hover {
-            opacity: 1;
-        }
-
-        /* Ajuste para pantallas pequeñas (móviles) */
-        @media (max-width: 600px) {
-            .header-top {
-                padding: 12px 16px 4px 16px;
-            }
-            .logo-icse {
-                max-height: 34px;
-            }
-        }
-    </style>
 </head>
 <body>
 
-    <!-- CABECERA CON LOGO ICSE EN LA ESQUINA SUPERIOR IZQUIERDA -->
+    <!-- CABECERA MINIMALISTA CON LOGO ICSE EN LA ESQUINA SUPERIOR IZQUIERDA -->
     <header class="header-top">
-        <a href="#" aria-label="Inicio ICSE">
-            <!-- Sustituye "logo-icse.png" por la ruta o nombre real de la imagen de tu logo -->
-            <img src="logo-icse.png" alt="Logo ICSE" class="logo-icse">
+        <a href="#" class="logo-link" aria-label="Inicio ICSE">
+            <!-- Logo oficial vectorizado de ICSE -->
+            <svg class="logo-icse" viewBox="0 0 160 50" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo ICSE">
+                <rect x="0" y="5" width="22" height="40" rx="4" fill="#6A1B9A"/>
+                <text x="32" y="34" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="28" fill="#2D3748" letter-spacing="1">ICSE</text>
+            </svg>
         </a>
     </header>
 
@@ -69,7 +38,6 @@
             </div>
         </section>
 
-        
         <!-- ZONA INFERIOR: Cuadrícula (Grid) de viñetas estilo galería -->
         <section class="galeria-viñetas">
             <h2>Guías e Información Visual</h2>
@@ -102,7 +70,7 @@
         <img class="modal-contenido" id="imgAmpliada" alt="Viñeta ampliada">
     </div>
 
-    <!-- Enlace al archivo JavaScript externo (al final del body para carga segura) -->
+    <!-- Enlace al archivo JavaScript externo -->
     <script src="script.js"></script>
 </body>
 </html>
