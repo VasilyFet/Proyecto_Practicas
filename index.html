@@ -6,10 +6,50 @@
     <title>Punto Violeta - Las Palmas de Gran Canaria</title>
     <!-- Enlace a tu archivo CSS externo -->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
+    <!-- Estilos específicos para la integración del logo ICSE -->
+    <style>
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 16px 24px 8px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-icse {
+            max-height: 42px; /* Tamaño discreto, elegante y no agresivo */
+            width: auto;
+            object-fit: contain;
+            opacity: 0.9;
+            transition: opacity 0.2s ease;
+        }
+
+        .logo-icse:hover {
+            opacity: 1;
+        }
+
+        /* Ajuste para pantallas pequeñas (móviles) */
+        @media (max-width: 600px) {
+            .header-top {
+                padding: 12px 16px 4px 16px;
+            }
+            .logo-icse {
+                max-height: 34px;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <!-- CABECERA CON LOGO ICSE EN LA ESQUINA SUPERIOR IZQUIERDA -->
+    <header class="header-top">
+        <a href="#" aria-label="Inicio ICSE">
+            <!-- Sustituye "logo-icse.png" por la ruta o nombre real de la imagen de tu logo -->
+            <img src="logo-icse.png" alt="Logo ICSE" class="logo-icse">
+        </a>
+    </header>
 
     <main class="contenedor-principal">
         
